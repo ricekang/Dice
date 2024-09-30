@@ -8,12 +8,27 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="0"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="189dp"
+        android:text="擲骰子"
+        androidLtextSize="30sp"
+        android:OnClick="Roll"
+        app:layout_constraintBottom_toTopOf="@+id/txv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        tools:layout_editor_absoluteX="160dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
