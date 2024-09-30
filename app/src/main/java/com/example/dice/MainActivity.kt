@@ -17,4 +17,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+    fun Roll(v:View){
+        var txv:TextView = findViewById(R.id.txv)
+        txv.text = (1..6).random().toString()
+    }
 }
